@@ -8,7 +8,7 @@ question_prompt1 = ['\t\t\t\nRound 1\n'
     "3.How many medals did China win at the Beijing Olympics?\n(a) 80\n(b) 100\n(c) 30\n(d) 150\n\n",
 
 ]
-question_prompt2 = ['\t\t\tRound 2\n'
+question_prompt2 = ['Round 2\n'
     "4.How long is a marathon?\n(a) 26 miles\n(b) 32 miles\n(c) 50 miles\n(d) 80 miles\n\n",
 
     "5.What type of race is the Tour de France?\n(a) jumping \n(b) running\n(c) swimming\n(d) Bicycle race\n\n",
@@ -24,7 +24,7 @@ question_prompt3 = ['\t\t\tRound 3\n'
     "9.What is the only country to have played in every single soccer World Cup?\n(a) Brazil\n(b) USA\n(c) Israel\n(d) Nigeria\n\n",
 
 ]
-question_prompt4 = ['\t\t\tBonus\n'
+question_prompt4 = ['\t\t\t\nBonus\n'
     "10.What do the rings in the Olympics represent?\n(a) Number of sports\n(b) The continents of the world\n(c) Number of medals\n(d) Gold chains\n\n "
 
 ]
@@ -50,8 +50,7 @@ def run_test(questions):
         count+=1
         if count==10:
             score+=4
-        else:
-            print(question_prompt2)
+
 
         if answer == question.answer:
             score += 1
@@ -60,7 +59,9 @@ def run_test(questions):
             print("your score is :",score,"\nCorrect \U0001F602 ! the answer is" + " " + answer)
             print('#####################')
         else:
+            print('#####################')
             print ("Wrong \U0001F612, the answer is" + " " + answer)
+            print('#####################')
 
 
     print("You got " + str(correct) + "/" + str(len(questions)) + " answers correct")
