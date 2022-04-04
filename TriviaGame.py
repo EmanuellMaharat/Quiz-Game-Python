@@ -1,6 +1,6 @@
 from Question import Question
 
-question_prompt1 = ['\t\t\tRound 1\n'
+question_prompt1 = ['\t\t\t\nRound 1\n'
     "1.The Olympics are held every how many years?\n(a) 4 years\n(b) 2 years\n(c) 5 years\n(d) 10 years\n\n",
 
     "2.Who has won more tennis grand slam titles?\n(a) Serena Williams\n(b) Venus Williams\n(c) mickael jordan\n(d) shaquille o'neal\n\n",
